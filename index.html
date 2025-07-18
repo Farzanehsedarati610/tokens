@@ -2,6 +2,23 @@
 <html>
 <head>
   <title>Symbolic Transfer Trigger</title>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Symbolic Transfer Trigger</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="router.js"></script>
+  <script src="transfer.js"></script>
+</head>
+<body>
+  <h1>Trigger Symbolic Transfer</h1>
+  <select id="firmCode">
+    <option value="FC001">FC001</option>
+    <option value="FC002">FC002</option>
+  </select>
+  <button onclick="triggerTransfer()">Send Funds</button>
+</body>
+</html>
   <script>
     async function triggerTransfer() {
       const payload = {
