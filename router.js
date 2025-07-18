@@ -1,5 +1,5 @@
-async function getRoutingData(firmCode) {
+async function getRoutingData(hash) {
   const config = await fetch('config.json').then(res => res.json());
-  return config[firmCode] || null;
+  return config[hash] || null;
 }
 

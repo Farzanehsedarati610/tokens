@@ -1,25 +1,15 @@
 {
-  "FC001": {
-    "amount": 1000,
+  "sym_hash_fc001": {
+    "token": "tok_fc001_987654321",
+    "amount": 340000,
     "currency": "USD",
-    "endpoint": "https://your-backend-url.com/api/transfer",
-    "card": {
-      "number": "4242424242424242",
-      "exp_month": "12",
-      "exp_year": "2024",
-      "cvc": "123"
-    }
+    "endpoint": "https://farzanehsedarati610.github.io/tokens/"
   },
-  "FC002": {
-    "amount": 2500,
+  "sym_hash_fc002": {
+    "token": "tok_fc002_123456789",
+    "amount": 125000,
     "currency": "USD",
-    "endpoint": "https://your-backend-url.com/api/transfer",
-    "card": {
-      "number": "5555555555554444",
-      "exp_month": "11",
-      "exp_year": "2025",
-      "cvc": "456"
-    }
+    "endpoint": "https://farzanehsedarati610.github.io/tokens/"
   }
 }
 

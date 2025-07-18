@@ -1,56 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Symbolic Transfer Trigger</title>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Symbolic Transfer Trigger</title>
+  <title>Farzaneh Transfer Console</title>
   <link rel="stylesheet" href="style.css">
   <script src="router.js"></script>
   <script src="transfer.js"></script>
 </head>
 <body>
-  <h1>Trigger Symbolic Transfer</h1>
-  <select id="firmCode">
-    <option value="FC001">FC001</option>
-    <option value="FC002">FC002</option>
+  <h1>Trigger SYM Transfer</h1>
+  <select id="hashSelector">
+    <option value="sym_hash_fc001">sym_hash_fc001</option>
+    <option value="sym_hash_fc002">sym_hash_fc002</option>
   </select>
-  <button onclick="triggerTransfer()">Send Funds</button>
-</body>
-</html>
-  <script>
-    async function triggerTransfer() {
-      const payload = {
-        amount: 1000,
-        currency: "USD",
-        payment_method: {
-          type: "card",
-          card: {
-            number: "4242424242424242",
-            exp_month: "12",
-            exp_year: "2024",
-            cvc: "123"
-          }
-        }
-      };
-
-      const response = await fetch("https://farzanehsedarati610.github.io/tokens/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(payload)
-      });
-
-      const result = await response.json();
-      alert("Transfer status: " + result.status);
-    }
-  </script>
-</head>
-<body>
-  <h1>Trigger Symbolic Transfer</h1>
-  <button onclick="triggerTransfer()">Send Funds</button>
+  <button onclick="triggerTransfer()">Execute Transfer</button>
 </body>
 </html>
 
