@@ -1,0 +1,25 @@
+{
+  "FC001": {
+    "amount": 1000,
+    "currency": "USD",
+    "endpoint": "https://your-backend-url.com/api/transfer",
+    "card": {
+      "number": "4242424242424242",
+      "exp_month": "12",
+      "exp_year": "2024",
+      "cvc": "123"
+    }
+  },
+  "FC002": {
+    "amount": 2500,
+    "currency": "USD",
+    "endpoint": "https://your-backend-url.com/api/transfer",
+    "card": {
+      "number": "5555555555554444",
+      "exp_month": "11",
+      "exp_year": "2025",
+      "cvc": "456"
+    }
+  }
+}
+
